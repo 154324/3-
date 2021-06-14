@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+
+/* 레이아웃 */
+#wrap {}
+#header {height: 325px; background: url(../img/dog2_bg.png) center top repeat-x; background-repeat:no-repeat; background-color: #E6E6E6;}
+#contents { }
+#footer {border-top: 1px solid #eee;}
+
+/* 컨텐츠 레이아웃 */
+#cont_nav {background-color: #E6E6E6; display: none;}
+#cont_tit {background-color: #A4A4A4;}
+#cont_ban {background-color: #E6E6E6;}
+#cont_cont {background-color: #E6E6E6;}
+
+/* 컨테이너 */
+.container {width: 990px; margin: 0 auto; height: inherit; /* background: rgba(255,255,255,0.3);*/}
+
+/* 헤더 */
+.header .header-menu {text-align: right;}
+.header .header-menu a {font-size: 20px; font-family: 'Nanum Brush Script'; color: #0489B1; padding: 10px 0px 10px 13px; display: inline-block;}
+.header .header-menu a:hover {color: #666;}
+.header .header-tit {text-align: center;}
+.header .header-tit h1 { font-size: 50px; padding: 70px 600px 6px 20px; display: inline-block; color: #000; margin-top: 40px; font-family: 'Nanum Brush Script'; text-transform: uppercase;}
+.header .header-icon {text-align: center; margin-top: 30px;}
+.header .header-icon a {width: 60px; height: 60px; display: inline-block; background: url(../img/icon.png); margin: 0 3px;}
+.header .header-icon a.icon1 {background-position: 0 0;}
+.header .header-icon a.icon2 {background-position: 0 -60px;}
+.header .header-icon a.icon3 {background-position: 0 -120px;}
+.header .header-icon a.icon4 {background-position: 0 -180px;}
+.header .header-icon a.icon1:hover {background-position: -60px 0;}
+.header .header-icon a.icon2:hover {background-position: -60px -60px;}
+.header .header-icon a.icon3:hover {background-position: -60px -120px;}
+.header .header-icon a.icon4:hover {background-position: -60px -180px;}
+
+
+/* 전체 메뉴 */
+.nav {overflow: hidden; padding: 30px 0;}
+.nav > div {float: left; width: 40%;}
+.nav > div:last-child {width: 20%;} /* ie9부터 사용 가능 */
+.nav > div.last {width: 20%;}
+.nav > div h3 {font-size: 30px; color: #000000; margin-bottom: 4px; font-family: 'Nanum Brush Script';}
+.nav > div ol {font-size: 20px;  overflow: hidden; font-family: 'Nanum Brush Script';}
+.nav > div ol li {float: left; width: 50%;}
+.nav > div.last ol li {width: 100%;}
+.nav > div ol li a:hover {text-decoration: underline;}
+
+/* 타이틀 */
+.tit {position: relative;}
+.tit h2 {font-size: 40px; text-align: center; padding: 5px 0; letter-spacing: 2px; color: #000; font-family: 'Nanum Brush Script', cursive;}
+.tit .btn {position: absolute; top: 5px; right: 0; width: 60px; height: 60px; background: url(../img/icon.png) no-repeat 0 -600px;}
+.tit .btn.on {background-position: 0 -660px;}
+
+
+/* 컨텐츠 */
+.cont h3 {font-size: 30px; color: #000000bd; padding-bottom: 3px; font-weight: bold; font-family: 'Nanum Brush Script';}
+.cont {overflow: hidden; padding-top: 30px;}
+.cont .column {position: relative; float: left; width: 289px; height: 363px; margin: 0 30px 30px 0; padding-right: 30px;}
+.cont .col1 {border-right: 1px solid #c8c8c8; }
+.cont .col2 {border-right: 1px solid #c8c8c8; }
+.cont .col3 {margin-right: 0; padding-right: 0; }
+.cont .col4 {border-right: 1px solid #c8c8c8;}
+.cont .col5 {border-right: 1px solid #c8c8c8;}
+.cont .col6 {margin-right: 0; padding-right: 0;}
+
+.cont .column .ico_img {display: block; width: 60px; height: 60px; 
+background: url(../img/icon.png) no-repeat; position: absolute; left: 0; top: 0;}
+.cont .column .ico_tit {padding-left: 70px; font-size: 16px; color: #2c94c4;}
+.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;}
+
+.cont .col1 .ico_img {background-position: 0px -240px;}
+.cont .col2 .ico_img {background-position: 0px -300px;}
+.cont .col3 .ico_img {background-position: 0px -360px;}
+.cont .col4 .ico_img {background-position: 0px -420px;}
+.cont .col5 .ico_img {background-position: 0px -480px;}
+.cont .col6 .ico_img {background-position: 0px -540px;}
+.cont .col1 .ico_img:hover {background-position: -60px -240px;}
+.cont .col2 .ico_img:hover {background-position: -60px -300px;}
+.cont .col3 .ico_img:hover {background-position: -60px -360px;}
+.cont .col4 .ico_img:hover {background-position: -60px -420px;}
+.cont .col5 .ico_img:hover {background-position: -60px -480px;}
+.cont .col6 .ico_img:hover {background-position: -60px -540px;}
+
+/* 게시판 */
+.notice h3 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold; font-family: 'Nanum Brush Script';}
+.notice {position: relative;}
+.notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold; font-family: 'Nanum Brush Script';}
+.notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
+.notice ul li a {font-size: 12px;}
+.notice a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+/* 게시판2 */
+.notice2 {position: relative; margin-top: 15px;}
+.notice2 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold; font-family: 'Nanum Brush Script';}
+.notice2 li {overflow: hidden; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
+.notice2 li a {float: left; width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice2 li span {float: right; width: 30%; text-align: right;}
+.notice2 a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+
+/* 게시판4 */
+.notice4 {position: relative; border: 1px solid #ccc; }
+.notice4 h4 {border-bottom: 1px solid #ccc; font-size: 14px; color:#0093bd; font-weight: 700; padding: 8px 10px;}
+.notice4 h4 em {color: #cf3292;}
+.notice4 ul {padding: 10px;}
+.notice4 li {overflow: hidden; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px; padding-bottom: 2px;}
+.notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice4 li span {float: right; width: 30%; text-align: right;}
+.notice4 a.more {position: absolute; right: 9px; top: 9px;}
+
+/* 탭 메뉴 */
+.tab_menu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;}
+.tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc;}
+.tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px;}
+.tab_menu ul li a {padding: 5px 10px; display: block;}
+.tab_menu ul li ul {position: absolute; left: 0; top: 48px; width: 270px; border: 0;}
+.tab_menu ul li ul li {float: none; border:0; background: url(../img/dot.gif) no-repeat 9px 8px; padding-left: 18px;}
+.tab_menu ul li ul li a {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; padding: 0 0 3px 0;}
+.tab_menu ul li.active {background: #2c94c4;}
+.tab_menu ul li.active a {color:#fff;}
+.tab_menu ul li.active ul li a {color: #333;}
+
+
+/* 푸터 */
+.footer {padding: 25px 0; text-align: center;}
+.footer ul {margin-bottom: 20px;}
+.footer li {position: relative; display: inline; padding: 0 7px 0 10px;}
+.footer li:before {content: ''; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 2px;}
+.footer li:first-child:before {width: 0; height: 0;}
+.footer .w3c {margin-top: 15px;}
+
+/* 슬릭 배너 */
+.ban {position: relative; padding: 24px 0 40px;}
+.ban .slick-prev {position: absolute; left: -80px; top: 80px; width: 43px; height: 43px; background: url(../img/icon.png) no-repeat -150px 0; text-indent: -9999px;}
+.ban .slick-next {position: absolute; right: -80px; top: 80px; width: 43px; height: 43px; background: url(../img/icon.png) no-repeat -150px -43px; text-indent: -9999px;}
+.ban .slick-prev:hover {background-position: -193px 0;}
+.ban .slick-next:hover {background-position: -193px -43px;}
+.ban img {border: 4px solid #dcdcdc;}
+.ban img:hover {border-color: #fff;}
+.ban .slick-slide {margin: 10px;}
+.ban .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
+.ban .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.ban .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px;
+cursor: pointer; background: #5dbfeb; border-radius: 50%;}
+.ban .slick-dots li.slick-active button {background: #000000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
